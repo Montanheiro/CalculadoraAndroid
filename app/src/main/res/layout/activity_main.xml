@@ -17,16 +17,34 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
 
-            <EditText
-                android:id="@+id/editText3"
-                android:layout_width="375dp"
-                android:layout_height="120dp"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="number|numberSigned|numberDecimal"
-                android:text="5+6+7+2"
+            <TextView
+                android:id="@+id/calculo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:textAlignment="textEnd"
-                android:textSize="30sp" />
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/visor"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:textAlignment="textEnd"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/clear"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:onClick="limpar"
+                android:text="Limpar" />
         </TableRow>
 
     </TableLayout>
@@ -47,6 +65,7 @@
                 android:id="@+id/button10"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
+                android:onClick="buttonClick"
                 android:text="7"
                 android:textSize="18sp" />
 
@@ -54,6 +73,7 @@
                 android:id="@+id/button13"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
+                android:onClick="buttonClick"
                 android:text="8"
                 android:textSize="18sp" />
 
@@ -61,6 +81,7 @@
                 android:id="@+id/button12"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
+                android:onClick="buttonClick"
                 android:text="9"
                 android:textSize="18sp" />
 
@@ -69,7 +90,8 @@
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
-                android:text="÷"
+                android:onClick="buttonClick"
+                android:text="/"
                 android:textSize="18sp" />
 
         </TableRow>
@@ -82,6 +104,7 @@
                 android:id="@+id/button6"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
+                android:onClick="buttonClick"
                 android:text="4"
                 android:textSize="18sp" />
 
@@ -89,6 +112,7 @@
                 android:id="@+id/button16"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
+                android:onClick="buttonClick"
                 android:text="5"
                 android:textSize="18sp" />
 
@@ -96,6 +120,7 @@
                 android:id="@+id/button15"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
+                android:onClick="buttonClick"
                 android:text="6"
                 android:textSize="18sp" />
 
@@ -104,7 +129,8 @@
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
-                android:text="x"
+                android:onClick="buttonClick"
+                android:text="*"
                 android:textSize="18sp" />
         </TableRow>
 
@@ -116,6 +142,7 @@
                 android:id="@+id/button7"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
+                android:onClick="buttonClick"
                 android:text="1"
                 android:textSize="18sp" />
 
@@ -123,6 +150,7 @@
                 android:id="@+id/button19"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
+                android:onClick="buttonClick"
                 android:text="2"
                 android:textSize="18sp" />
 
@@ -130,6 +158,7 @@
                 android:id="@+id/button18"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
+                android:onClick="buttonClick"
                 android:text="3"
                 android:textSize="18sp" />
 
@@ -138,6 +167,7 @@
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
+                android:onClick="buttonClick"
                 android:text="-"
                 android:textSize="18sp" />
         </TableRow>
@@ -150,6 +180,7 @@
                 android:id="@+id/button8"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
+                android:onClick="buttonClick"
                 android:text="."
                 android:textSize="18sp" />
 
@@ -157,6 +188,7 @@
                 android:id="@+id/button22"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
+                android:onClick="buttonClick"
                 android:text="0"
                 android:textSize="18sp" />
 
@@ -164,6 +196,7 @@
                 android:id="@+id/button21"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
+                android:onClick="calcular"
                 android:text="="
                 android:textSize="18sp" />
 
@@ -172,6 +205,7 @@
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
+                android:onClick="buttonClick"
                 android:text="+"
                 android:textSize="18sp" />
         </TableRow>
