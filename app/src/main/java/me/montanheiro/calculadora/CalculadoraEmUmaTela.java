@@ -8,12 +8,12 @@ import android.widget.TextView;
 
 import com.towel.math.Expression;
 
-public class MainActivity extends AppCompatActivity {
+public class CalculadoraEmUmaTela extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_calculadora_em_uma_tela);
     }
 
     public void buttonClick(View view){
@@ -38,7 +38,4 @@ public class MainActivity extends AppCompatActivity {
         visor.setText("");
         calculo.setText("");
     }
-
-
-
 }
