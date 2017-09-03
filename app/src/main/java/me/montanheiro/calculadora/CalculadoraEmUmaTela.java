@@ -1,5 +1,6 @@
 package me.montanheiro.calculadora;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -38,4 +39,6 @@ public class CalculadoraEmUmaTela extends AppCompatActivity {
         visor.setText("");
         calculo.setText("");
     }
+
+
 }
